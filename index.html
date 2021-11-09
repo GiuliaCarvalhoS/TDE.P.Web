@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/funcoes.js" ></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+  
+</head>
+<body>
+<!-- Trigger/Open The Modal -->
+<nav id="menu">
+  <ul>
+    <li><img id="logo" src="assets/megafone.png" width= "50px" ></li>
+      <li> <label id="myTitulo">  Anuncie aqui </label></li>
+      <li><button id="myBtn">Cadastrar produto para venda</button></li>
+    </ul>
+  </nav>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+          <form id="formulario">
+                <label> VENDA SEU PRODUTO:</label><br>
+                <p><b>Nome:</b></p>
+                <input type="text" name="user" id="user" placeholder="Usuário" />
+                <p><b>Email:</b></p>
+                <input type="email" name="mail" id="email" placeholder="E-mail" />
+                <p><b>Telefone:</b></p>
+                <input type="number" name="telefone" id="telefone" placeholder="Telefone" />
+                <p><b>Cidade:</b></p>
+                <input type="text" name="cidade" id="cidade" placeholder="Cidade" /><br>
+                <p><b>Produto:</b></p>
+                <input type="text" name="produto" id="produto" placeholder="Produto" /><br>
+                <p><b>Valor:</b></p>
+                <input type="number" name="valor" id="valor" placeholder="Valor" />
+                <p><b>Descrição:</b></p>
+                <input type="text" name="descricao" id="descricao" placeholder="Descrição" />
+                <p><b>Qual o estado/condição?</b></p>
+                <input type="text" name="estado" id="estado" placeholder="Novo/Semi-Novo/Usado" />
+            
+
+                <input id="bGravar" type="submit" form="formulario" class="btn-submit" value="Publicar"/><br><br>
+            </form>
+        </div> 
+        
+  </div>
+  <div class="div-card">
+    <div id=" imagemPoltrona"><img id="imagemPoltrona2" src="assets/poltrona.jpg"height="100px"/></div>
+    <div id="textoDeProduto">
+          <label><h1>Poltrona de Couro</h1> </label><br>
+          <label><h2>2.000,00</h2></label><br>
+          <label>Usada</label><br>
+          <label>Se você gosta de passar horas em frente ao computador jogando, sabe que é necessário ter uma cadeira de qualidade e que também seja adequada para esses momentos de lazer, não é mesmo? Pensando nisso, a PCTop traz a cadeira gamer Racer 1006, disponível na cor vermelha, trazendo máximo conforto e ergonomia para você. Ela acompanha almofadas para pescoço e lombar e descanso de pé, deixando seus momentos de lazer ou trabalho muito mais confortáveis. Para facilitar sua locomoção, ela conta com rodízios em nylon. Seu assento acolchoado e encosto para as costas são ergonomicamente confortáveis e de alta qualidade e densidade, fazendo da Racer 1006 uma cadeira revolucionária.</label>
+          <br><button class="botaoConversar">Conversar com venderdor</button>
+    </div>
+
+  
+  
+  </div>
+
+ 
+
+
+
+
+
+<script>
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
